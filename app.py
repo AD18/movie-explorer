@@ -185,7 +185,7 @@ Search for your favorite movie from the 90s and discover similar gems from that 
 """)
 
 st.write(
-    "Type any movie name.We'll recommend genre-similar movies from your dataset."
+    "Type any movie name.We'll recommend genre-similar movies from our dataset."
 )
 
 col_search, col_options = st.columns([3, 1])
@@ -235,3 +235,4 @@ if st.button("Search") or (query and not st.session_state.get("_queried")):
                     col = cols[i % 4]
                     with col:
                         st.markdown(f"🎬 **{title}**")
+
